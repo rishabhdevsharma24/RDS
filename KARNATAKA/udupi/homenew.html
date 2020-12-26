@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color c0c0c0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30;
+    left:0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #red;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+<!--
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>  -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+<!--
+<div class="slideshow-container">
+<header>
+   <h1>City Gallery</h1>
+</header>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 13</div>
+  <img src="B1.jpg" style="width:100%">
+  <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 13</div>
+  <img src="B13.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  <img src="B2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  <img src="B3.jpg" style="width:100%">
+  <div class="text">Caption four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  <img src="B5.jpg" style="width:100%">
+  <div class="text">Caption five</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  <img src="B6.jpg" style="width:100%">
+  <div class="text">Caption six</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  <img src="B7.jpg" style="width:100%">
+  <div class="text">Caption seven</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  <img src="B8.jpg" style="width:100%">
+  <div class="text">Caption eight</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  <img src="B9.jpg" style="width:100%">
+  <div class="text">Caption nine</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 13</div>
+  <img src="B14.jpg" style="width:100%">
+  <div class="text">Caption Ten</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  <img src="B10.jpg" style="width:100%">
+  <div class="text">Caption eleven</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="B11.jpg" style="width:100%">
+  <div class="text">Caption Twelve</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  <img src="B12.jpg" style="width:100%">
+  <div class="text">Caption thirteen</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ <span class="dot"></span>
+ <span class="dot"></span> 
+<span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+ <span class="dot"></span>
+</div>
+<h1 style="font-size:50px;">Images of Banglore</h1>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<h1 style="color:black;"></h1>
+<img src="B5.jpg" alt="nature pic" style="width:1500px;height:500px;">
+<h1 style="font-size:40px;">Banglore</span></h1>
+<p>Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure.</p>
+
+
+</div>
+<h1>Places to visit in Banglore:</h1>
+<ol>
+  <li><h2><span style="color:crimson">Lal Bagh</span></h2></li><img src="beach.jpg"  style="width:800px;height:400px;"><p> </p>
+
+<li><h2><span style="color:crimson">Bannerghatta National Park</span></h2></li><img src="museum.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Tipu Sultan's Summer Palace</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+ 
+<li><h2><span style="color:crimson">Cubbon park</span></h2></li><img src="b1.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Banglore Palace</span></h2></li><img src="b2.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Nandi hills</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Wonderla Water park</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Orion Mall</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">ISKCON Temple Bangalore</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Banglore Fort</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+
+<li><h2><span style="color:crimson">Ulsoor Lakes</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p></p>
+</ol> -->
+
+<footer>Copyright &copy; rishabhdevsharma9@gmail.com</footer>
+</body>
+</html> 

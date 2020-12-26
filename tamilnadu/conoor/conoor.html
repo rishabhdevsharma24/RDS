@@ -1,0 +1,155 @@
+<html>
+<title>CONOOR</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor="#87CEFA">
+</head>
+<header>
+<h1 style="color:black;">CONOOR</h1>
+</header>
+<body>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 4 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="conoor.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="catherin.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="dolphins.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="simspark.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<img src="conoor.jpg" alt="nature pic" style="width:1500px;height:500px;">
+<p><font size="4" color="black">Coonoor is a Taluk and a municipality in the Nilgiris district in the state of Tamil Nadu, India. It is known for its production of Nilgiri tea. Coonoor is located at an altitude of 1,850 m above sea level, and is the second largest hill station in the Nilgiri hills after Ooty. It is an ideal base for a number of trekking expeditions leading into the Nilgiris. The nearest airport is Coimbatore International Airport about 79 km from Coonoor town. As of 2011, the town had a population of 45,494. Coonoor is also home to the Pasteur Institute of India, which is responsible for producing Anti-rabies Vaccine and DPT group of Vaccines for the Expanded Program of Immunization of Government of India.</p>
+<h2>Pictures of conoor</h2>
+<img src="catherin.jpg"  style="width:800px;height:400px;">
+<img src="dolphins.jpg" style="width:800px;height:400px;">
+<img src="simspark.jpg" style="width:800px;height:400px;">
+</div>
+<h1>places to visit in conoor:</h1>
+<ol>
+  <li><h2><span style="color:crimson">Sims park</span></h2></li><img src="simspark.jpg"  style="width:800px;height:400px;"><p>Sim's Park is in Coonoor, The Nilgiris, Tamil Nadu. It is an important tourist place to visit in Coonoor, at a height of 1780 meters above mean sea level. Here the maximum temperature goes up to 30 degree Celsius and the minimum falls to 5°C. The average rain fall of this garden is 150 cm. It extends over an area of 12 hectares of undulating land and possesses a number of natural advantages.</p>
+<li><h2><span style="color:crimson">Catherin falls</span></h2></li><img src="catherin.jpg" style="width:800px;height:400px;"><p>Catherine Falls is a double-cascaded waterfall located in Kotagiri, The Nilgiris District, Tamil nadu and it is also a major tourist spot in Kotagiri, located on the Mettupalayam road branching off at Aravenu</p>
+<li><h2><span style="color:crimson">Dolphins nose</span></h2></li><img src="dolphins.jpg" style="width:800px;height:400px;"><p>Dolphin's Nose Viewpoint is a tourist spot in Coonoor, The Nilgiris District, Tamil Nadu. Dolphin's Nose is well over 1,000 feet above sea level, 10 km from Coonoor and is a spectacular spot to visit.[1][2][3] The tip of the peak resembles a dolphin's nose, hence the name Dolphin's Nose. It is an enormous rock formation that is entirely unique. There are gigantic ravines found both to the left and right of Dolphin's Nose and there is a view of inspiring Catherine Falls with its continuing stream several thousand metres below which is located a relatively short distance away opposite of the Dolphin's Nose.[1][4][5] Best part of spot are the hairpin turns and tea plantations on the way</p>
+</ol>
+</body>
+</html>

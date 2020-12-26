@@ -1,0 +1,161 @@
+<html>
+<title>SALEM</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor="#BC8F8F">
+</head>
+<header>
+<h1 style="color:black;">SALEM</h1>
+</header>
+<body>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 4 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="salem.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="paravasa.jpeg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="lingam.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="mall.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p style="color:black;"><h2><span style="color:crimson">Salem</span> is a city in Salem district in the Indian state of Tamil Nadu. It is located about 160 kilometres northeast of Coimbatore, 186 kilometres southeast of Bangalore and about 340 kilometres southwest of the state capital, Chennai. </p>
+<img src="salem.jpg" alt="nature pic" style="width:1500px;height:500px;">
+<p><font size="4" color="black">
+</p>
+<h2>Pictures of salem</h2>
+<img src="paravasa.jpeg"  style="width:800px;height:400px;">
+<img src="lingam.jpg" style="width:800px;height:400px;">
+<img src="mall.jpg" style="width:800px;height:400px;">
+</div>
+<h1>places to visit in salem:</h1>
+<ol>
+  <li><h2><span style="color:crimson">Paravasa ulagam park</span></h2></li><img src="paravasa.jpeg"  style="width:800px;height:400px;"><p>The Paravasa Ulagam Water Theme Park is situated at 16 km from the city of Salem, near Mallur on the National Highway 7. This water park comprises a green and calm environment, complimented by water games, go-karting, biking, a wave pool, video games, a science park and water falls.</p>
+
+<li><h2><span style="color:crimson">Thanthondreeswarar Temple</span></h2></li><img src="lingam.jpg" style="width:800px;height:400px;"><p>Sri Thanthondreeswarar Temple or Sri Thanthondrieswarar Temple ( Thanthondreeswarar Temple ) is at Belur in the Indian state of Tamil Nadu.The temple was built by the Cholas kingdom in the 12th century AD. The main deity is Lord Thanthondreeswarar (Lord Shiva) and the female deity is Goddess Dharmasamvarthini.
+Thanthondreeswarar Temple is located on the banks of Vasishta Nadi (Vasishta River). The temple has a serene atmosphere and is surrounded by beautiful hillocks.
+This temple comes under the Hindu Religious Charitable Endowment Departme</p>
+
+<li><h2><span style="color:crimson">The mega Reliance greenfield mall</span></h2></li><img src="mall.jpg" style="width:800px;height:400px;"><p> The mega Reliance Greenfield Mall, the work of which is fast  working at the construction site of Reliance Greenfield Mall in Salem city
+</ol>
+</body>
+</html>

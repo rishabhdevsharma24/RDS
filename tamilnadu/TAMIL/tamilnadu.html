@@ -1,0 +1,259 @@
+ 
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title> </title>
+<head runat="server">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box
+            }
+
+            body {
+                font-family: Verdana,sans-serif;
+            }
+
+            .mySlides {
+                display: none
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/13 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 13px;
+                width: 13px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .text {
+                    font-size: 11px
+                }
+            }
+        </style>
+        <body bgcolor="#CD853F">
+    </head>
+    <body>
+        <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 13</div>
+                <img src="tamil.jpg" style="width:100%">
+                <div class="text">Caption one</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 13</div>
+                <img src="chennai.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 13</div>
+                <img src="coimbatore.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 13</div>
+                <img src="kodaikenal.jpg" style="width:100%">
+                <div class="text">Caption four</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 13</div>
+                <img src="kanya.jpg" style="width:100%">
+                <div class="text">Caption five</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 13</div>
+                <img src="madurai.jpg" style="width:100%">
+                <div class="text">Caption six</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 13</div>
+                <img src="ooty2.jpg" style="width:100%">
+                <div class="text">Caption seven</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 13</div>
+                <img src="pondi.jpg" style="width:100%">
+                <div class="text">Caption eight</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 13</div>
+                <img src="rameshwaram.jpg" style="width:100%">
+                <div class="text">Caption nine</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 13</div>
+                <img src="salem.jpg" style="width:100%">
+                <div class="text">Caption Ten</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">11 / 13</div>
+                <img src="valparai.jpg" style="width:100%">
+                <div class="text">Caption eleven</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">12 / 13</div>
+                <img src="yercaud.jpg" style="width:100%">
+                <div class="text">Caption Twelve</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">13 / 13</div>
+                <img src="conoor.jpg" style="width:100%">
+                <div class="text">Caption thirteen</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+        <p style="color:black;"></p>
+        <img src="tamil.jpg" alt="nature pic" style="width:1500px;height:500px;">
+        <p><font size="4" color:black><h2><span style="color:crimson;">Tamilnadu</span></h2><p>Tamil Nadu is one of the 29 states of India. Its capital and largest city is Chennai. Tamil Nadu lies in the southernmost part of the Indian Peninsula and is bordered by the union territory of Puducherry and the South Indian states of Kerala, Karnataka, and Andhra Pradesh. It is bounded by the Eastern Ghats on the north, by the Nilgiri, the Anamalai Hills, and Kerala on the west, by the Bay of Bengal in the east, by the Gulf of Mannar and the Palk Strait on the southeast, and by the Indian Ocean on the south. The state shares a maritime border with the nation of Srilanka</p>
+        <h2>Pictures of Tamilnadu</h2>
+        <img src="chennai.jpg" style="width:800px;height:400px;">
+        <img src="coimbatore.jpg" style="width:800px;height:400px;">
+        <img src="kanya.jpg" style="width:800px;height:400px;">
+        <img src="conoor.jpg" style="width:800px;height:400px;">
+        <img src="kodaikenal.jpg" style="width:800px;height:400px;">
+        <img src="madurai.jpg" style="width:800px;height:400px;">
+        <img src="ooty2.jpg" style="width:800px;height:400px;">
+        <img src="pondi.jpg" style="width:800px;height:400px;">
+        <img src="rameshwaram.jpg" style="width:800px;height:400px;">
+        <img src="salem.jpg" style="width:800px;height:400px;">
+        <img src="valparai.jpg" style="width:800px;height:400px;">
+        <img src="yercaud.jpg" style="width:800px;height:400px;">
+        </div>
+        <h1>places to visit in Tamilnadu:</h1>
+        <ol>
+            <li><a href="file:///C:/Users/Dell1/Desktop/RANJITHA/WEBSITE/KERALA/kerala/alappuzha/slide.html/aleppy.html">ALAPPUZHA</a>
+            <li><a href="file:///C:/Users/Dell1/Desktop/RANJITHA/2states/rrr/ranz/statekerala/kannur/kannur.htm">KANNUR</a>
+            <li><a href="file:///C:/Users/Dell1/Desktop/RANJITHA/2states/rrr/ranz/statekerala/kochi/kochii.html">KOCHI</a>
+            <li><a href="file:///C:/Users/Dell1/Desktop/RANJITHA/2states/rrr/ranz/statekerala/kollam/kollam.html">KOLLAM</a>
+            <li><a href="">KOVALAM</a>
+            <li><a href="">KOZHIKODE</a>
+            <li><a href="">KUMARAKOMA</a>
+            <li><a href="">MUNNAR</a>
+            <li><a href="">PALAKKAD</a>
+            <li><a href="">THRISSUR</a>
+            <li><a href="">TRIVANDRUM</a>
+            <li><a href="file:///C:/Users/Dell1/Desktop/RANJITHA/2states/rrr/ranz/statekerala/gavi/gavi.html">GAVI</a>
+
+        </ol>
+    </body>
+</html>

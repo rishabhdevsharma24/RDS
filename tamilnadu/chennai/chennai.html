@@ -1,0 +1,223 @@
+<html>
+<title>CHENNAI</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header, footer {
+    padding: 1em;
+    color: black;
+    background-color: B82601;
+    clear: left;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor="#d7c7c7">
+</head>
+<header>
+<h1 style="color:black;">CHENNAI</h1>
+</header>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="chennai.JPG" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="marina.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="poonga.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="port.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p style="color:black;"><h2><span style="color:Lightgrey">Chennai</span></h2>Chennai is the capital of the Indian state of Tamil Nadu. Located on the Coromandel Coast off the Bay of Bengal, it is one of the biggest cultural, economic and educational centres in South India. According to the 2011 Indian census, it is the fourth-largest city and fourth-most populous urban agglomeration in India. The city together with the adjoining regions constitute the Chennai Metropolitan Area, which is the 36th-largest urban area by population in the world. Chennai is among the most visited Indian cities by foreign tourists. It was ranked 43rd most visited city in the world for year 2015. The Quality of Living Survey rated Chennai as the safest city in India. Chennai attracts 45 percent of health tourists visiting India, and 30 to 40 percent of domestic health tourists. As such, it is termed "India's health capital". As a growing metropolitan city in a developing country, Chennai confronts substantial pollution and other logistical and socio-economic problems.</p>
+<img src="chennai.JPG" alt="nature pic" style="width:1500px;height:500px;">
+<p><font size="4" color="black">
+</p>
+<h2>Pictures of chennai</h2>
+<img src="marina.jpg"  style="width:800px;height:400px;">
+<img src="poonga.jpg" style="width:800px;height:400px;">
+<img src="port.jpg" style="width:800px;height:400px;">
+</div>
+<h1>places to visit in chennai:</h1>
+<ol>
+  <li><h2><span style="color:lightgrey">Marina beach</span></h2></li><img src="marina.jpg"  style="width:800px;height:400px;"><p>Marina Beach is a natural urban beach in the city of Chennai, India, along the Bay of Bengal. The beach runs from near Fort St. George in the north to Foreshore Estate in the south, a distance of 6.45 km, making it the longest natural urban beach in the country and one of the world's longest beach ranking with 1. The Marina is primarily sandy, unlike the short, rocky formations that make up the Juhu Beach in Mumbai. The average width of the beach is 300 m and the width at the widest stretch is 437 m. Bathing and swimming at the Marina Beach are legally prohibited because of the dangers, as the undercurrent is very turbulent. It is one of the most crowded beaches in the country and attracts about 30,000 visitors a day during weekdays and 50,000 visitors a day during the weekends and on holidays. During summer months, about 15,000 to 20,000 people visit the beach daily.</p>
+
+
+<li><h2><span style="color:lightgrey">Semmozhi poonga</span></h2></li><img src="poonga.jpg" style="width:800px;height:400px;"><p>Semmozhi Poonga is a botanical garden in Chennai set up by the horticulture department of the Government of Tamil Nadu. The garden was opened on 24 November 2010 by then chief Minister Dr.M. Karunanidhi and is the first botanical garden in the city. The garden is located in the Cathedral Road–Anna Salai junction, opposite the American Consulate, on the erstwhile Drive-in Woodlands Hotel. Encompassing an area of 20 acres, it was built at a cost of 80 million. More than 500 species of plants are being grown in the area, in addition to the 80 trees that was already in existence during the development of the park, some of them being more than 100 years old. The garden houses some of the popular exotic flora and rare plant species, medicinal and aromatic herbs. Many of the exotic plants are imported from countries like China and Thailand, including a plethora of bonsai varieties of ficus microcarpa and ficus ginseng.</p>
+
+
+<li><h2><span style="color:lightgrey">Chennai port</span></h2></li><img src="port.jpg" style="width:800px;height:400px;"><p>India with official port operations beginning in 1881, although maritime trade started much earlier in 1639 on the undeveloped shore. It is an artificial and all-weather port with wet docks. Once a major travel port, it become a major container port in the post-Independence era. The port remains a primary reason for the economic growth of Tamil Nadu, especially for the manufacturing boom in South India, and has contributed greatly to the development of the city. It is due of the existence of the port that the city of Chennai eventually became known as the Gateway of South India. The port has become a hub port for containers, cars and project cargo in the east coast of India. From handling a meagre volume of cargo in the early years of its existence, consisting chiefly of imports of oil and motors and the export of groundnuts, granite and ores, the port has started handling more than 60 million tonnes of cargo in recent years. In 2008, the port's container traffic crossed 1 million twenty-foot equivalent units. It is currently ranked the 86th largest container port in the world and there are plans to expand the capacity to about 140 million tonnes per annum. It is an ISO 14001:2004 and ISPS-certified port and has become a main line port having direct connectivity to more than 50 ports around the world.</p>
+
+
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="country">Country</label><br>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<footer>Copyright &copy; rishabhdevsharma9@gmail.com</footer>
+</ol>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<html>
+<title>KOCHI</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor="#D3D3D3">
+</head>
+<header>
+<h1 style="color:black;">KOVALAM</h1>
+</header>
+<body>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 4 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="kovalam.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="lighthouse.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="viz.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="vivanta.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p style="color:black;">Kovalam is a small coastal town in the southern Indian state of Kerala, south of Thiruvananthapuram. At the southern end of Lighthouse Beach is a striped lighthouse with a viewing platform. Palm-backed beaches also include Hawa Beach and Samudra Beach. Heading south, Vizhinjam Juma Masjid mosque overlooks the busy fishing harbor. Inland, Sagarika Marine Research Aquarium displays tech</p>
+<img src="kovalam.jpg" alt="nature pic" style="width:1500px;height:500px;">
+<p><font size="4" color="black">
+</p>
+<h2>Pictures of kovalam</h2>
+<img src="lighthouse.jpg"  style="width:800px;height:400px;">
+<img src="viz.jpg" style="width:800px;height:400px;">
+<img src="vivanta.png" style="width:800px;height:400px;">
+</div>
+<h1>places to visit in kochi:</h1>
+<ol>
+  <li><h2><span style="color:crimson">Light house beach</span></h2></li><img src="lighthouse.jpg"  style="width:800px;height:400px;"><p>Light house beach is named after the 30 meter high Light house here which is the most important feature of this beach. The Light House is located towards the southern end of the beach and it's on a cape. There is an observation platform from which you can see Poovar in one direction and the famous Beemapalli mosque on the other. You can reach this platform by climbing a total of 142 steps.</p>
+<li><h2><span style="color:crimson">Vizhinjam</span></h2></li><img src="viz.jpg" style="width:800px;height:400px;"><p>Vizhinjam lighthouse is situated near Kovalam beach in Kerala. It started functioning on 30 June 1972. Vizhinjam was a busy seaport in the eighteenth and nineteenth centuries. Before the current light was installed, there were no lighthouses at this location. A day mark beacon (flag mast) must have been there in 18th century. After 19th century, this port was in a neglected state. A lighted beacon was constructed in 1925 at nearby Kolachal. Subsequently, a day mark beacon was provided at Vilinjam during 1960</p>
+<li><h2><span style="color:crimson">Vivanta by taj</span></h2></li><img src="vivanta.png" style="width:800px;height:400px;"><p>The luxurious Vivanta by Taj is located along Kovalam Beach offering a backdrop of natural surroundings</p>
+</ol>
+</body>
+</html>

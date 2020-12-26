@@ -1,0 +1,182 @@
+<html>
+<title>KANNUR</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor="#D3D3D3">
+</head>
+<header>
+<h1 style="color:black;">KANNUR</h1>
+</header>
+<body>
+
+<h2>slideshow of Kannur city</h2>
+<!--
+<p>Change image every 4 seconds:</p>-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="kannur.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="beach.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="museum.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="fort.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p style="color:black;">Kannur, also known by its anglicised name Cannanore,is a city and a Municipal Corporation in Kannur district, state of Kerala, India. It is the administrative headquarters of the Kannur District and situated 518 km north of the state capital Thiruvananthapuram. During British rule in India, Kannur was known as Cannanore, a name that is still in use by the Indian Railways.[2] Kannur is the largest city of North Malabar region. Kannur is one of the million-plus urban agglomerations in India with a population of 1,642,892 in 2011.
+Kannur district is known as the land of Looms and Lores, because of the weaving industry functioning in the district and ritualistic folk arts held in temples. Kannur is famous for its pristine beaches, Theyyam (its native performing art), and its handloom industry.
+Kannur is of great strategic military importance in India. Kannur Cantonment is one of the 62 military cantonments in the country and is the headquarters of the Defence Security Corps and Territorial Army’s 122 Infantry Battalion (part of the Madras Regiment). The Indian Naval Academy (INA) is 35 km north of Kannur City. It is Asia's largest and the world's third largest naval academy. An Indian Coast Guard Academy has received approval to be built at Kannur. This academy will be built on the banks of Valapattanam River at Irinave, east of Azhikkal.</p>
+<img src="kannur.jpg" alt="nature pic" style="width:1500px;height:500px;">
+<p><font size="4" color="black">
+</p>
+<h2>Pictures of kannur</h2>
+<img src="beach.jpg"  style="width:800px;height:400px;">
+<img src="museum.jpg"style="width:800px;height:400px;">
+<img src="fort.jpg" style="width:800px;height:400px;">
+</div>
+<h1>places to visit in kannur:</h1>
+<ol>
+  <li><h2><span style="color:crimson">Muzhappilangad Drive in beach</span></h2></li><img src="beach.jpg"  style="width:800px;height:400px;"><p>Muzhappilangad Drive-in Beach is a beach in the state of Kerala in southwestern India. It is located parallel to National Highway 66(formerly National Highway 17) between Thalassery and Kannur.This beach is the longest Drive-In Beach in India and is featured among the top 6 best beaches for driving in the world in BBC article for Autos.[2] Even though Goa has many beautiful beaches, it does not have a Drive-in beach.longest drive in beach in AsiaThe beach festival is celebrated in the month of April and it is one of the important tourist attraction in the district of Kannur in Kerala. The youth also try many driving stunts in cars like drifting and wheeling in bikes as this is a paradise for driving along the shore. Just 100m from this beach you would find a private island Dharmadam island, which can be reached by walk at times of low tide</p>
+<li><h2><span style="color:crimson">Arrakkal museum</span></h2></li><img src="museum.jpg" style="width:800px;height:400px;"><p>The Arrakkal Museum is a museum dedicated to the Arakkal family, the only Muslim royal family in Kerala, South India. The museum is actually a section of the Arakkalkettu(Arakkal Royal Palace). The durbar hall section of the palace has been converted into a museum by the Government of Kerala. It was opened in July 2005 after a Rs. 9,000,000 renovation.Although renovated by the government, the Arakkalkettu is still owned by the Arakkal Royal Trust and does not fall under the control of the country's archaeology department, the Archaeological Survey of India. The government had taken a keen interest in preserving the heritage of the Arakkal Family, which had played a prominent role in the history of Malabar. A nominal entry fee is charged by the Arakkal Royal Trust from visitors to the museum.nt light was installed, there were no lighthouses at this location. A day mark beacon (flag mast) must have been there in 18th century. After 19th century, this port was in a neglected state. A lighted beacon was constructed in 1925 at nearby Kolachal. Subsequently, a day mark beacon was provided at Vilinjam during 1960</p>
+<li><h2><span style="color:crimson">St.Angelo's fort</span></h2></li><img src="fort.jpg" style="width:800px;height:400px;"><p>St. Angelo's Fort was built in 1505 by Dom Francisco de Almeida, the first Portuguese Viceroy of India on the Arabian sea coast about 2 km from Kannur town. It was attacked in vain by the local Indian ruler Zamorin and kolathiri in the Siege of Cannanore (1507).Fort at KannurIn August 1509 Almeida, refusing to recognize Afonso de Albuquerque's as the new Portuguese governor to supersede himself, arrested him in this fortress after having fought the naval Battle of Diu. Afonso de Albuquerque was released after six months' confinement, and become governor on the arrival of the grand-marshal of Portugal with a large fleet, in October 1509.[1]The Dutch captured the fort from the Portuguese in 1663. They modernised the fort and built the bastions Hollandia, Zeelandia and Frieslandia that are the major features of the present structure. The original Portuguese fort was pulled down later. A painting of this fort and the fishing ferry behind it can be seen in the Rijksmuseum Amsterdam. The Dutch sold the fort to king Ali Raja of Arakkal in 1772. In 1790 the British seized it and used it as their chief military station in Malabar until 1947.</p>
+</ol>
+</body>
+</html>

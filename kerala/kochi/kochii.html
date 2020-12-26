@@ -1,0 +1,157 @@
+<html>
+<title>KOCHI</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor="aqua">
+</head>
+<header>
+<h1 style="color:black;">KOCHI</h1>
+</header>
+<body>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="kochi.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="kuzhupilly.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="hillpalace.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="wonderla.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p style="color:black;"></p>
+<img src="kochi.jpg" alt="nature pic" style="width:1500px;height:500px;">
+<p><font size="4" color="black">Kochi (also known as Cochin) is a city in southwest India's coastal Kerala state. It has been a port since 1341, when a flood carved out its harbor and opened it to Arab, Chinese and European merchants. Sites reflecting those influences include Fort Kochi, a settlement with tiled colonial bungalows and diverse houses of worship. Cantilevered Chinese fishing nets, typical of Kochi, have been in use for centuries.
+</p>
+<h2>Pictures of kochi</h2>
+<img src="hillpalace.jpg"  style="width:800px;height:400px;">
+<img src="wonderla.jpg" style="width:800px;height:400px;">
+<img src="kuzhupilly.jpg" style="width:800px;height:400px;">
+</div>
+<h1>places to visit in kochi:</h1>
+<ol>
+  <li><h2><span style="color:crimson">Hill palace</span></h2></li><img src="hillpalace.jpg"  style="width:304px;height:228px;"><p>Hill Palace is the largest archaeological museum in Kerala, located at Tripunithura, Kochi, near Karingachira area.[1] It was the Imperial Administrative offices and official residence of Cochin Maharaja. Built in 1865, the Palace complex consists of 49 buildings in the traditional architectural style, spreading across in 54 acres (220,000 m2). The complex has an archaeological museum, a heritage museum, a deer park, a pre-historic park and a children’s park.[2] The campus of the museum is home to several rare species of medicinal plants. Presently the palace has been converted into a museum by The Kerala State Archaeology Department and is open to public all days except Mondays from 9:00 am to 12:30 pm and 2:00 pm to 5:00 pm. The palace is about 12 km from Ernakulam mainland and approachable by road and rail.</p>
+<li><h2><span style="color:crimson">Wonderla</span></h2></li><img src="wonderla.jpg" style="width:800px;height:400px;"><p>Wonderla Holidays Limited is a leading amusement park designing and operating company in India headquartered near Bidadi, 28 kilometres (17 mi) from Bengaluru. It is promoted by Kochouseph Chittilappilly and his son Arun Chittilappilly. Wonderla's flagship amusement park located at the same address is the second theme park project from the company and has been operational since October 2005. It is spread over an area of 82 acres (33 ha). The first amusement park, Wonderla Kochi, was set up in 2000. The third amusement park project Wonderla Hyderabad was commissioned in April 2016. The parks have been set up with a total investment of over ?7.5 billion (US$120 million).</p>
+<li><h2><span style="color:crimson">Kuzhupilly</span></h2></li><img src="kuzhupilly.jpg" style="width:800px;height:400px;"><p>Kuzhupilly beach, located in Vypeen or Vypin, this white, sandy beach is ideal for swimming. The backwaters nearby are an added charm, as are the paddy fields and coconut groves on the way to the beach, where kite festivals are ocassionally held.</p>
+</ol>
+</body>
+</html>
